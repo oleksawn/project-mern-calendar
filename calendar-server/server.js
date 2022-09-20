@@ -55,10 +55,10 @@ MongoClient.connect(
     //   res.json({ title: 'data was deleted' });
     // });
 
-    // const port = process.env.PORT || 5000;
-    server.listen(8080, () => {
+    const port = process.env.PORT || 5000;
+    server.listen(port, () => {
       // browsers can connect to this server 'app'
-      console.log(`listening on port: ${8080}`);
+      console.log(`listening on port: ${port}`);
     });
   })
   .catch((err) => console.error(err));
