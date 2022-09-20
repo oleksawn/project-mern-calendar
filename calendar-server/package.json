@@ -1,10 +1,11 @@
 {
   "name": "calendar-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Calendar for better planning",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon --exec babel-node server.js",
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec babel-node server.js",
     "build": "babel server.js -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
